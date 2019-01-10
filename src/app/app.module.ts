@@ -5,18 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HariBolModule } from './@haribol/haribol.module';
-import { LayoutModule } from '@angular/cdk/layout';
 import { haribolConfig } from './@haribol/config/haribol.config';
+import { HaribolLayoutModule } from './layout/layout.module';
+import { LoginComponent } from './features/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     HariBolModule.forRoot(haribolConfig),
-    LayoutModule,
+    HaribolLayoutModule,
     BrowserAnimationsModule
   ],
   providers: [],

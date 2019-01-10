@@ -5,25 +5,22 @@ import { FooterModule } from './components/footer/footer.module';
 import { ContentModule } from './components/content/content.module';
 import { SidebarModule } from '../@haribol/components/sidebar/sidebar.module';
 import { LayoutComponent } from './layout.component';
-import { NavbarModule } from './components/navbar/navbar.module';
- 
+
 
 @NgModule({
-    declarations: [
-        LayoutComponent
-    ],
-    imports     : [
-        RouterModule,
-        SidebarModule,
-        ContentModule,
-        FooterModule,
-        NavbarModule,
-        ToolbarModule
-    ],
-    exports     : [
-        LayoutComponent
-    ]
+  declarations: [
+    LayoutComponent
+  ],
+  imports: [
+    RouterModule,
+    SidebarModule,
+    ContentModule,
+    FooterModule,
+    ToolbarModule
+  ],
+  exports: [
+    LayoutComponent
+  ]
 })
-export class VerticalLayout1Module
-{
+export class HaribolLayoutModule {
 }

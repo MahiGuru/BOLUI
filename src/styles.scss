@@ -1,4 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+  font-family: 'haribol';
+  src:
+    url('./assets/fonts/haribolfont.ttf?9udsnt') format('truetype'),
+    url('./assets/fonts/haribolfont.woff?9udsnt') format('woff'),
+    url('./assets/fonts/haribolfont.svg?9udsnt#fuse-iconfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'haribol', "Helvetica Neue", sans-serif;
+
+  width: 100vw;
+  min-height: 100vh;
+  background: url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat;
+  background-size: cover;
+}
